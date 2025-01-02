@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let number = prompt("Enter a number:");
+
+      if (number > 0) {
+        document.write("The number is positive.");
+      } else if (number < 0) {
+        document.write("The number is negative.");
+      } else {
+        document.write("The number is zero.");
+      }
+
+      let dayNumber = prompt(
+        "Enter a number between 1 and 7 to get the day of the week:"
+      );
+
+      switch (dayNumber) {
+        case "1":
+          document.write("Monday");
+          break;
+        case "2":
+          document.write("Tuesday");
+          break;
+        case "3":
+          document.write("Wednesday");
+          break;
+        case "4":
+          document.write("Thursday");
+          break;
+        case "5":
+          document.write("Friday");
+          break;
+        case "6":
+          document.write("Saturday");
+          break;
+        case "7":
+          document.write("Sunday");
+          break;
+        default:
+          document.write("Invalid input. Please enter a number between 1 and 7.");
+      }
+    </script>
+  </body>
+</html>
